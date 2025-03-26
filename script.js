@@ -1,17 +1,13 @@
-let count = 0;
-document.getElementById("counterButton").addEventListener("click", function() {
-    count++;
-    document.getElementById("count").textContent = count;
-});
-let counter = 0;
+let counters = Array(10).fill(0); // مصفوفة لتخزين العدادات لكل زر
 
-function incrementCounter(buttonNumber) {
-    counter++;
-    document.getElementById("counter").innerText = counter;
-    console.log(`تم الضغط على الزر ${buttonNumber}`);
+function incrementCounter(index) {
+    counters[index]++;
+    document.getElementById(`counter${index}`).innerText = counters[index];
 }
 
-function resetCounter() {
-    counter = 0;
-    document.getElementById("counter").innerText = counter;
+function resetCounters() {
+    counters.fill(0); // إعادة جميع القيم إلى 0
+    for (let i = 0; i < counters.length; i++) {
+        document.getElementById(`counter${i}`).innerText = 0;
+    }
 }
