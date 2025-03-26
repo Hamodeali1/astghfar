@@ -70,3 +70,25 @@ button:hover {
     background-color: darkred;
     transform: scale(1.1);
 }
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    direction: rtl;
+    background: url('https://source.unsplash.com/1600x900/?nature,sky') no-repeat center center fixed;
+    background-size: cover;
+    touch-action: manipulation; /* منع الزوم عند الضغط السريع */
+    color: white;
+}
+
+h1 {
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.button-group {
+    background: rgba(255, 255, 255, 0.8); /* جعل الخلفية شفافة قليلاً */
+    border-radius: 15px;
+}
