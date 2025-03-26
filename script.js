@@ -8,6 +8,6 @@ function incrementCounter(index) {
 function resetCounters() {
     counters.fill(0); // إعادة جميع القيم إلى 0
     for (let i = 0; i < counters.length; i++) {
-        document.getElementById(`counter${i}`).innerText = 0;
+        document.getElementById(`counter${i}`).innerText = counters[i];
     }
 }
