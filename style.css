@@ -3,56 +3,62 @@ body {
     font-family: Arial, sans-serif;
     direction: rtl;
     background-color: #f8f9fa;
-    touch-action: manipulation; /* منع الزوم عند الضغط السريع */
+    color: black;
+    margin: 0;
+    padding: 20px;
+    transition: 0.3s;
+}
+
+.dark-mode {
+    background-color: #121212;
+    color: white;
 }
 
 h1 {
-    color: #333;
+    margin-bottom: 20px;
 }
 
-#buttons-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-    margin-top: 20px;
+#settings-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+#settings-menu {
+    display: none;
+    margin-top: 10px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
 }
 
 .button-group {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: inline-block;
+    text-align: center;
+    margin: 10px;
     padding: 15px;
+    background: rgba(255, 255, 255, 0.85);
     border-radius: 15px;
-    background: white;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
-    width: 120px;
 }
 
-button {
+.zikr-btn {
     width: 80px;
     height: 80px;
     font-size: 16px;
     cursor: pointer;
     border: none;
-    background-color: #007bff;
     color: white;
     border-radius: 50%;
-    margin-top: 10px;
     transition: 0.3s;
 }
 
-button:hover {
-    background-color: #0056b3;
-    transform: scale(1.1);
-}
-
-.counter-display {
-    font-size: 18px;
-    margin-top: 5px;
-    font-weight: bold;
-    color: #333;
-}
+.zikr-btn:nth-child(1) { background-color: blue; }
+.zikr-btn:nth-child(2) { background-color: green; }
+.zikr-btn:nth-child(3) { background-color: gold; }
 
 #reset-btn {
     margin-top: 20px;
@@ -63,39 +69,4 @@ button:hover {
     border: none;
     border-radius: 25px;
     cursor: pointer;
-    transition: 0.3s;
 }
-
-#reset-btn:hover {
-    background-color: darkred;
-    transform: scale(1.1);
-}
-body {
-    text-align: center;
-    font-family: Arial, sans-serif;
-    direction: rtl;
-    background-image: url('https://source.unsplash.com/1600x900/?nature,sky'); 
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    color: white;
-    margin: 0;
-    padding: 0;
-    touch-action: manipulation; /* منع الزوم عند الضغط السريع */
-}
-
-h1 {
-    color: white;
-    background: rgba(0, 0, 0, 0.6);
-    padding: 10px 20px;
-    border-radius: 10px;
-    display: inline-block;
-    margin-top: 20px;
-}
-
-.button-group {
-    background: rgba(255, 255, 255, 0.85); /* جعل الخلفية شفافة قليلاً */
-    border-radius: 15px;
-    padding: 10px;
-}
-background-image: url('https://wallpapercave.com/wp/wp2757874.jpg');
