@@ -56,10 +56,6 @@ h1 {
     transition: 0.3s;
 }
 
-.zikr-btn:nth-child(1) { background-color: blue; }
-.zikr-btn:nth-child(2) { background-color: green; }
-.zikr-btn:nth-child(3) { background-color: gold; }
-
 #reset-btn {
     margin-top: 20px;
     padding: 12px 24px;
