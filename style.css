@@ -70,3 +70,31 @@ button:hover {
     background-color: darkred;
     transform: scale(1.1);
 }
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    direction: rtl;
+    background-image: url('https://source.unsplash.com/1600x900/?nature,sky'); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    margin: 0;
+    padding: 0;
+    touch-action: manipulation; /* منع الزوم عند الضغط السريع */
+}
+
+h1 {
+    color: white;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.button-group {
+    background: rgba(255, 255, 255, 0.85); /* جعل الخلفية شفافة قليلاً */
+    border-radius: 15px;
+    padding: 10px;
+}
