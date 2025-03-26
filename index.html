@@ -2,75 +2,67 @@
 <html lang="ar">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>استغفار</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="container">
-        <h1>استغفر الله</h1>
-        <button id="counterButton">اضغط هنا</button>
-        <p>عدد الاستغفار: <span id="count">0</span></p>
-    </div>
-    <script src="script.js"></script>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="ar">
-<head>
-    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>استغفار</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>موقع الاستغفار</h1>
+    <h1>موقع الأذكار</h1>
     
     <div id="buttons-container">
         <div class="button-group">
             <p>الحمد اللّٰـه</p>
-            <button onclick="incrementCounter()">اضغط هنا</button>
+            <button onclick="incrementCounter(0)">اضغط هنا</button>
+            <p class="counter-display">العداد: <span id="counter0">0</span></p>
         </div>
         <div class="button-group">
             <p>لا إله إلا الله</p>
-            <button onclick="incrementCounter()">اضغط هنا</button>
+            <button onclick="incrementCounter(1)">اضغط هنا</button>
+            <p class="counter-display">العداد: <span id="counter1">0</span></p>
         </div>
         <div class="button-group">
             <p>سبحان اللّٰـه</p>
-            <button onclick="incrementCounter()">اضغط هنا</button>
+            <button onclick="incrementCounter(2)">اضغط هنا</button>
+            <p class="counter-display">العداد: <span id="counter2">0</span></p>
         </div>
         <div class="button-group">
             <p>اللّٰـه أكبر</p>
-            <button onclick="incrementCounter()">اضغط هنا</button>
+            <button onclick="incrementCounter(3)">اضغط هنا</button>
+            <p class="counter-display">العداد: <span id="counter3">0</span></p>
         </div>
         <div class="button-group">
             <p>لا حول ولا قوة إلا بالله</p>
-            <button onclick="incrementCounter()">اضغط هنا</button>
+            <button onclick="incrementCounter(4)">اضغط هنا</button>
+            <p class="counter-display">العداد: <span id="counter4">0</span></p>
         </div>
         <div class="button-group">
             <p>أستغفر اللّٰـه</p>
-            <button onclick="incrementCounter()">اضغط هنا</button>
+            <button onclick="incrementCounter(5)">اضغط هنا</button>
+            <p class="counter-display">العداد: <span id="counter5">0</span></p>
         </div>
         <div class="button-group">
             <p>اللهم صلِّ على محمد</p>
-            <button onclick="incrementCounter()">اضغط هنا</button>
+            <button onclick="incrementCounter(6)">اضغط هنا</button>
+            <p class="counter-display">العداد: <span id="counter6">0</span></p>
         </div>
         <div class="button-group">
             <p>سبحان الله وبحمده</p>
-            <button onclick="incrementCounter()">اضغط هنا</button>
+            <button onclick="incrementCounter(7)">اضغط هنا</button>
+            <p class="counter-display">العداد: <span id="counter7">0</span></p>
         </div>
         <div class="button-group">
             <p>سبحان الله العظيم</p>
-            <button onclick="incrementCounter()">اضغط هنا</button>
+            <button onclick="incrementCounter(8)">اضغط هنا</button>
+            <p class="counter-display">العداد: <span id="counter8">0</span></p>
         </div>
         <div class="button-group">
             <p>اللهم اغفر لي</p>
-            <button onclick="incrementCounter()">اضغط هنا</button>
+            <button onclick="incrementCounter(9)">اضغط هنا</button>
+            <p class="counter-display">العداد: <span id="counter9">0</span></p>
         </div>
     </div>
 
-    <p id="counter-display">العداد: <span id="counter">0</span></p>
-    <button id="reset-btn" onclick="resetCounter()">إعادة التصفير</button>
+    <button id="reset-btn" onclick="resetCounters()">إعادة التصفير</button>
 
     <script src="script.js"></script>
 </body>
